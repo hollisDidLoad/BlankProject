@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var didTap = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ZStack {
+                didTap ? Color(.red)
+                    .edgesIgnoringSafeArea(.all)
+                : Color(.systemPink)
+                    .edgesIgnoringSafeArea(.all)
+                Button("Change backgroundcolor", action: {
+                    didTap.toggle()
+                }).foregroundColor(.white)
+            }
         }
-        .padding()
     }
 }
 
