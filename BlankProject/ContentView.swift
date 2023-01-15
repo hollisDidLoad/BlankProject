@@ -14,11 +14,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ZStack {
-                Color(didTap ? .red : .systemPink).edgesIgnoringSafeArea(.all)
+                Color(didTap ? .yellow : .white).edgesIgnoringSafeArea(.all)
                 Button("Change background color", action: {
                     didTap.toggle()
-                }).foregroundColor(.white)
-            }
+                }).foregroundColor(.black)
+            } 
         }
     }
 }
