@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             ZStack {
                 Color(didTap ? .red : .systemPink).edgesIgnoringSafeArea(.all)
-                Button("Change backgroundcolor", action: {
+                Button("Change background color", action: {
                     didTap.toggle()
                 }).foregroundColor(.white)
             }
