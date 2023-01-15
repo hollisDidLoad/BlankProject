@@ -18,7 +18,7 @@ struct ContentView: View {
                 Button("Change background color", action: {
                     didTap.toggle()
                 }).foregroundColor(.black)
-            }
+            } 
         }
     }
 }
